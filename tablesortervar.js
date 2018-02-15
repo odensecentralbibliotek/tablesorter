@@ -7,7 +7,8 @@
   Drupal.behaviors.tablesorter = {
     attach: function (context, settings) {
      	try{
-	$(".tablesorter").tablesorter({widgets: ["filter","zebra"]});
+	$("#tablesorter-filter").tablesorter({widgets: ["filter"]});
+        $(".tablesorter").tablesorter({widgets: ["zebra"]});
 	}
 	catch(e)
 	{
